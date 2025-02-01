@@ -1,0 +1,139 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+.main {
+  min-height: 100vh;
+}
+.huolto-form{
+  display: grid;
+  grid-template-columns: 350px 350px;
+  gap: 10px;
+  justify-content: center;
+ 
+}
+
+.huolto-form input,select{
+  margin: 0;
+}
+.button-item{
+  grid-area:5/1/6/3;
+}
+.button-item button{
+  width: 600px;
+}
+@media screen and (max-width: 750px) {
+  .huolto-form{
+    display: grid;
+    grid-template-columns: 250px 250px;
+    gap: 10px;
+    justify-content: center;
+   
+  }
+  .button-item button{
+   width: 400px;   
+  }
+   }
+   @media screen and (max-width: 500px) {
+    .huolto-form{
+      display: grid;
+      grid-template-columns: 200px 200px;
+      gap: 5px;
+      justify-content: center;
+     
+    }
+    .button-item button{
+      width: 350px;
+    }
+     }
+     @media screen and (max-width: 350px) {
+      .hinnasto{
+        text-align: center;
+        width: auto;
+      }
+      .huolto-form{
+        text-align: left;
+        display: grid;
+        grid-template-columns:auto;
+        justify-content: center;
+        align-content:center ;
+       
+      }
+      .button-item{
+        grid-area:9/1/10/2;
+      }
+      .button-item button{
+        width: 250px;
+      }
+       }
+
+ /*
+ Tästä alkaa product
+ */
+
+
+.product-info{
+  display: flex;
+  flex-direction: column;
+}
+.product-info-span-container{
+  font-size: 30px;
+  color: red;
+  margin-left: auto;
+  display: flex;
+  gap: 30px;
+}
+.product-info ul{
+  list-style: none;
+  padding-left: 0;
+  padding-top: 15px;
+}
+.product-info button{
+  justify-self: center;
+  align-self:flex-end;
+  width: 240px;
+
+}
+.product-info-varasto{
+  display: flex;
+  flex-direction: column;
+}
+.varasto-container{
+margin-left: auto;
+}
+.product-info-varasto span{
+  color: #000000;
+  font-size: 20px;
+}
+/*
+Tähän loppuu product
+*/
+.page-navigation{
+  color: yellow;
+  list-style:none;
+  display: flex;
+}
+.page-navigation li{
+ padding: 0;
+ margin: 0;
+}
+.subcate-info{
+  border-bottom:1px solid black;
+  border-image: linear-gradient(to right, transparent 5%,black 2%, black 95%,transparent 5%) 10;
+}
+.product-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+}
+.banner-h1{
+  text-shadow: 3px 3px #000;
+  font-weight: bolder;
+  font-family:Arial, Helvetica, sans-serif;
+}

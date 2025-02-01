@@ -1,0 +1,60 @@
+/*
+card item css starts here
+*/
+.card-item {
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    position:relative;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    gap: 5px;
+    will-change: transform;
+    transition: transform 0.5s ease-out;
+  
+  }
+  .card-item:hover{
+    transform: scale(1.1);
+    }
+  
+  .card-item h5 {
+    font-size: 15px;
+    margin-bottom: 0;
+  }
+  
+  .card-image-container {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  
+  }
+  
+  .card-footer {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    bottom: 10px;
+  }
+  
+  .card-footer span {
+    font-size: 15px;
+    color: red;
+    margin-bottom: 5px;
+  }
+
+  .card-item button {
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    height: 40px;
+    width: 80px;
+    
+  }
+  
+  /*
+  card item css ends here
+  */
